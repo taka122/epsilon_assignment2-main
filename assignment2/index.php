@@ -160,18 +160,7 @@ $totalPages = ceil($totalPosts / $limit); // 総ページ数（ceil＝切り上�
             <?php endif; ?>
 
 
-            <!-- 編集フォーム（同じページ内で表示） -->
-            <?php if (isset($_POST['id']) && $_POST['id'] === $post['id']): ?>
-                <form method="post">
-                    <input type="hidden" name="type" value="update">
-                    <input type="hidden" name="id" value="<?= $post['id'] ?>">
-                    <h3>タイトル:</h3>
-                    <textarea name="title" rows="1" cols="20" required><?= htmlspecialchars($post['title']) ?></textarea><br>
-                    <h3>メッセージ:</h3>
-                    <textarea name="message" rows="4" cols="40" required><?= htmlspecialchars($post['message']) ?></textarea><br>
-                    <button type="submit">更新</button>
-                </form>
-            <?php endif; ?>
+         
         <?php endif; ?>
 
 <?php endforeach; ?>

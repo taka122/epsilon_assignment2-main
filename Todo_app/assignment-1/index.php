@@ -129,7 +129,7 @@ $tasks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-     <link rel="stylesheet" href="style.css">
+     
     <meta charset="UTF-8">
     <title>Todo List</title>
     <style>
